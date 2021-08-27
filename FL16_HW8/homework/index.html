@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+
+<div class="container">
+  <div class="calculator">
+    <div class="input" id="input"></div>
+
+<table class="numbers">
+  <tr>
+    <td colspan="2"><button class="button del" id="clear">C</button></td>
+    <td colspan="2"><button class="button operator" value="/">/</button></td>
+  </tr>
+
+  <tr>
+    <td><button class="button num" value="9">9</button></td>
+    <td><button class="button num" value="8">8</button></td>
+    <td><button class="button num" value="7">7</button></td>
+    <td><button class="button operator " value="*">*</button></td>
+  </tr>
+
+  <tr>
+    <td><button class="button num" value="6">6</button></td>
+    <td><button class="button num" value="5">5</button></td>
+    <td><button class="button num" value="4">4</button></td>
+    <td><button class="button operator" value="+">+</button></td>
+  </tr>
+
+  <tr>
+    <td><button class="button num" value="3">3</button></td>
+    <td><button class="button num" value="2">2</button></td>
+    <td><button class="button num" value="1">1</button></td>
+    <td><button class="button operator" value="-">-</button></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><button class="button num" value="0">0</button></td>
+    <td colspan="2"><button class="button" id="equal">=</button></td>
+  </tr>
+
+
+</table>
+
+</div>
+
+  <div class="results" id="results">
+    <div id="rus" class="rus"></div>
+  </div>
+</div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

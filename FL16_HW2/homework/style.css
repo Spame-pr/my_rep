@@ -1,0 +1,250 @@
+:root {
+  --primary-color: #f2c744;
+  --light: #f4f6f9;
+  --dark: #000;
+  --primary-font: 'Shadows Into Light', cursive;
+  --secondary-font: 'Dancing Script', cursive;
+}
+
+ .container{
+  display: grid;
+  grid-template-columns: 2fr 0.9fr;
+  grid-template-rows: 0.3fr 2fr 0.1fr;
+  grid-row-gap:1em ; 
+  grid-column-gap: 0.8em;
+  grid-template-areas: "head head"
+                       "sect aside"
+                       "foot foot";
+                       
+  font-family: var(--secondary-font);
+}
+.head{
+  grid-area: head;
+  text-align: center;
+  box-shadow: 5px 5px 18px 0px rgba(34, 60, 80, 0.2);                       
+}
+.logo-camera{
+  width: 7%;
+}
+.head-name{
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+.head-description{
+  margin-top: 0px;
+  font-family: var(--primary-font);
+}
+
+.photos{
+  grid-area: sect;
+  box-shadow: 5px 5px 18px 0px rgba(34, 60, 80, 0.2);
+  display: grid;
+  grid-template-columns:  repeat(3,1fr) 2px;
+  grid-template-rows: 20px repeat(8,130px) 20px;
+  grid-row-gap:1em ; 
+  grid-column-gap: 0.8em;
+
+  grid-template-areas: ". . . "
+  "one two three"
+                       "four two three"
+                       "four five three"
+                       "four eight six"
+                       "seven eight nine"
+                       "seven eleven nine"
+                       "ten eleven nine"
+                       ". eleven nine";                       
+}
+.one-image{
+  grid-area: one; 
+  margin-left: 10px;
+}
+.two-image{
+  grid-area: two;
+ }
+ .three-image{
+  grid-area: three;
+ }
+ .four-image{
+  grid-area: four;
+  margin-left: 10px;
+}
+.five-image{
+  grid-area: five;
+}
+.six-image{
+  grid-area: six;
+}
+.seven-image{
+  grid-area: seven;
+  margin-left: 10px;
+}
+
+.eight-image{
+  grid-area: eight;
+}
+.nine-image{
+  grid-area: nine;
+}
+.ten-image{
+  grid-area: ten;
+  margin-left: 10px;
+}
+.eleven-image{
+  grid-area: eleven;
+}
+.ava{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;	
+}
+
+
+.bio{
+   grid-area: aside;
+  box-shadow: 5px 5px 18px 0px rgba(34, 60, 80, 0.2);
+  text-align: center;
+  font-size: 1em;
+  height: 43%;
+  position: sticky;
+  top: 20px;  
+} 
+.bio-ava{
+  width: 25%;
+  height: 20%;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.aside-description{
+  font-weight: bold;
+}
+.side-st{
+  font-family: var(--primary-font);
+}
+.soc-link{
+  color: black;
+}
+.soc-link:hover{
+  color: rgb(150, 149, 151);
+}
+ 
+.foot{
+  grid-area: foot;
+  text-align:center ;
+  box-shadow: 5px 5px 18px 0px rgba(34, 60, 80, 0.2);  
+}
+.logo-foot{
+  width: 3%;
+}
+.foot-name{
+  margin:0px ;
+}
+.foot-description{
+  margin:0px;
+  font-family: var(--primary-font);
+}
+.epam{
+  font-family: var(--primary-font);
+  margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+  .bio{
+    height: 65%;
+    position: static;
+  }
+  .bio-ava{
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 3fr 0.5fr 0.1fr;
+    grid-template-areas: "head "
+                         "sect "
+                          "aside"
+                         "foot ";
+  }
+  .logo-camera{
+    width: 25%;
+  }
+  .logo-foot{
+    width: 15%;
+  }
+
+  .photos{
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(11,0.2fr);
+    grid-template-areas: 
+    
+                         "one"
+                         "two"
+                         "three"
+                         "four"
+                         "five"
+                         "six"  
+                         "seven"
+                         "eight"
+                         "nine"
+                         "ten"
+                         "eleven";                                           
+  }
+  .one-image{
+    grid-area: one;
+    margin: 5px; 
+   
+  }
+  .two-image{
+    grid-area: two;
+    margin: 5px; 
+   }
+   .three-image{
+    grid-area: three;
+    margin: 5px; 
+   }
+   .four-image{
+    grid-area: four;
+    margin: 5px; 
+  }
+  .five-image{
+    grid-area: five;
+     margin: 5px; 
+  }
+  .six-image{
+    grid-area: six;
+     margin: 5px; 
+  }
+  .seven-image{
+    grid-area: seven;
+    margin: 5px; 
+  }
+  .eight-image{
+    grid-area: eight;
+    margin: 5px; 
+  }
+  .nine-image{
+    grid-area: nine;
+    margin: 5px; 
+
+  }
+  .ten-image{
+    grid-area: ten;
+    margin: 5px; 
+
+  }
+  .eleven-image{
+    grid-area: eleven;
+    margin: 5px; 
+  }
+  
+  .bio{
+    height: 100%;
+    position: static;
+  }
+  .bio-ava{
+    width: 30%;
+    height: 15%;
+  }
+}

@@ -1,0 +1,139 @@
+﻿* {
+  outline: none;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+.head{
+ 
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 580px;
+  color: white
+}
+.nav-link{
+  color: white;
+}
+.head-text{
+  position: relative;
+  top: 25%;
+}
+.head-text-size{
+  font-size: 3em;
+}
+.serv-line{
+color: grey;
+}
+.serv-line::after{
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid grey;
+  width: 4%;
+  bottom: 11%;
+  left: 48.2%;
+}
+.btn-get{
+  background: url(../img/touch-bg.png) no-repeat;
+  background-size: cover;
+  width: 18%;
+  height: 59px;
+  color: white;
+}
+.sect-works{
+  background: rgb(238, 238, 238);
+}
+.works-col{
+  color: grey;
+}
+.works-col::after{
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid grey;
+  width: 2.5%;
+  top: 189%;
+  left: 49%;
+}
+.first-block{
+  width: 450px;
+  height: 450px;
+}
+.second-block{
+  width: 450px;
+  height: 965px;
+}
+.button-slide{
+height: 70px;
+}
+
+.slider-block::after{
+  content: url(../img/references-image-bg.png);
+  top: 416%;
+  left: 10%;
+  position: absolute;
+  z-index: -1;
+}
+.contact-sect{
+  background-color: black;
+  color: white;
+  height: 350px;
+}
+.reference-sect{
+  height: 650px;
+}
+.references-head::after{
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid grey;
+  width: 5.5%;
+  top:398%;
+  left: 47.5%;
+}
+.contact-head::after{
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid grey;
+  width: 4%;
+  top:487%;
+  left: 48.3%;
+}
+.form-control-f{
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+.form-control-last{
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 43%;
+}
+.slide-dot{
+  background: rgb(100, 25, 25);
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 90px;
+  border-radius: 50%;
+}
+.slide-dot:first-child{
+  background-color: grey;
+}
+.btn-send{
+  width: 11%;
+  border-radius: 0;
+  height: 50px;
+}
+.foot{
+  background: url(../img/footer-bg.jpg);
+  color: white;
+  height: 170px;
+}
+.foot-right{
+  font-size: 0.7em;
+}

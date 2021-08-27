@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.message-input{
+    width: 787px;
+    height: 30px;
+    border-radius:5px;
+    border: 1px solid black;
+}
+.butt-send{
+    width: 100px;
+    height: 36px;
+    border-radius:5px;
+    border: 1px solid black;
+}
+.butt-send:hover{
+    background-color: #07575B;
+    color: white;
+}
+.chat-window{
+    border: 1px solid black;
+    border-radius:5px;
+    width: 900px;
+    height: 400px;
+}
+.send{
+    margin-top: 10px;
+}
+.showComing{
+background-color: #003B46;
+width: 60%;
+display: flex;
+justify-content: flex-start;
+margin: 10px;
+float: right;
+padding: 10px;
+border-radius: 5px;
+color: white;
+}
+.showIncoming{
+    border-radius: 5px;
+    padding: 10px;
+float: left;
+background-color: #66A5AD;
+color: white;
+width: 60%;
+display: flex;
+justify-content: flex-start;
+margin: 10px;
+}
+.timeCom{
+    float: left;
+    
+}
+.timeIncom{
+    float: right;
+    
+}

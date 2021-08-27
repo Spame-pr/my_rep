@@ -1,0 +1,58 @@
+
+
+.rules-center{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  text-align: center;
+}
+.rules{
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 20px;
+ 
+}
+.rules-list{
+  text-align: left;
+}
+.hands{
+  visibility: hidden;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.game{
+  width: 200px;
+  height: 300px;
+}
+.button{
+  background: none;
+  border: none;
+}
+
+.play{
+  background: black;
+  color: white;
+  font-size: 1.2em;
+}
+.play:hover{
+  background: white;
+  color: black;
+}
+.button:hover{
+  transform: scale(1.1);
+  transition: 0.3s linear;
+}
+.opponent{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.result{
+  font-size: 2em;
+  text-align: center;
+  padding: 40px 0 0 30px
+}
